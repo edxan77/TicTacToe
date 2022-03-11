@@ -1,0 +1,106 @@
+body {
+  background-color: black;
+}
+
+.Appp {
+  display: grid;
+  grid-template-columns: 120px 120px 120px;
+  grid-template-rows: 120px 120px 120px;
+  border: 2px solid rgb(0, 255, 8);
+  margin-left: 450px;
+  margin-top: 150px;
+  width: 360px;
+  height: 360px;
+  transition: 1s;
+  animation-name: anim;
+  animation-duration: 1s;
+}
+.Appp2 {
+  border-radius: 50px;
+  margin-left: 450px;
+  margin-top: 150px;
+  width: 360px;
+  height: 360px;
+  background-color: rgb(0, 255, 8);
+  transition: 1s;
+  animation-name: anim;
+  animation-duration: 1s;
+}
+
+.sqr {
+  border: 2px solid rgb(0, 255, 8);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 39px;
+}
+
+.sqr2 {
+  border: 2px solid #c9ccc9;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 39px;
+  animation-name: anim;
+  animation-duration: 1s;
+  background-color: aqua;
+}
+.sqr3 {
+  border: 2px solid #c9ccc9;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 39px;
+  animation-name: anim2;
+  animation-duration: 1s;
+  background-color: rgb(240, 252, 4);
+}
+
+.result {
+  color: rgb(0, 14, 1);
+  transition: 1s;
+  margin-top: 150px;
+  margin-left: 130px;
+  position: absolute;
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.restart {
+  position: absolute;
+  margin-top: 200px;
+  margin-left: 145px;
+  height: 40px;
+  border: none;
+  background-color: rgb(0, 0, 0);
+  color: rgb(0, 255, 8);
+  cursor: pointer;
+  border: 2px solid rgb(208, 255, 99);
+}
+.restarthide {
+  opacity: 0;
+}
+@keyframes anim {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+    background-color: aqua;
+  }
+}
+
+@keyframes anim2 {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(360deg);
+    background-color: rgb(144, 253, 0);
+  }
+}
